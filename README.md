@@ -2,7 +2,7 @@
 
 A little hack for Illminate View to access flash messages easily.
 
-You can use the `messages` flash messages like a laravel builtin error messages.
+You can use the `withMessages` method like a laravel builtin method `withErrors` in a general purpose.
 
 ```php
 Route::get('register', function()
@@ -21,7 +21,7 @@ Route::post('register', function()
         return Redirect::to('register')->withErrors($validator);
     }
 
-    // The `withMessages` method can be used as `withErrors` in a general purpose.
+    // You can use the `withMessages` method like a laravel builtin method `withErrors` in a general purpose.
     return Redirect::to('register')->withMessages(array('default' => 'Success!');
 });
 ```
@@ -29,7 +29,7 @@ Route::post('register', function()
 After redirection, you may utilize the automatically bound $messages variable in your view:
 
 ```
-<?php echo $errors->first('email'); ?>
+<?php echo $messages->first('default'); ?>
 ```
 
 see also [laravel docs#validation](http://laravel.com/docs/validation#error-messages-and-views)
