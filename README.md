@@ -40,7 +40,7 @@ Add dependency in `composer.json`
 
 ```json
 "require": {
-    "kohkimakimoto/laravel-message-binder": "dev-master"
+    "kohkimakimoto/laravel-message-binder": "0.*"
 }
 ```
 
