@@ -1,6 +1,6 @@
 # Laravel Message Binder
 
-A little hack for Illminate View to access flash messages easily.
+A little hack for Illuminate View to access flash messages easily.
 
 You can use the `withMessages` method like a laravel builtin method `withErrors` in a general purpose.
 

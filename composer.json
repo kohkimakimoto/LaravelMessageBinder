@@ -1,6 +1,6 @@
 {
     "name": "kohkimakimoto/laravel-message-binder",
-    "description": "A little hack for Illminate View to access flash messages easily.",
+    "description": "A little hack for Illuminate View to access flash messages easily.",
     "license": "MIT",
     "authors": [
         {
